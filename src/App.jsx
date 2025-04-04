@@ -1,5 +1,6 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
+import { useState } from "react";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import App1 from "./components/App1";
 import App2 from "./components/App2";
 import App3 from "./components/App3";
@@ -19,14 +20,15 @@ import App16 from "./components/App16";
 import App17 from "./components/App17";
 import App18 from "./components/App18";
 import App19 from "./components/App19";
-import App20 from "./components/App20";
+import Appp20 from "./components/Appp20";
 import App21 from "./components/App21";
-
+import Appp22 from "./components/Appp22";
 function App() {
+
   return (
     <BrowserRouter>
       <div>
-        <div>
+          <div className="App-Row">
           <Link to="app1" className="box">App1</Link>
           <Link to="app2" className="box">App2</Link>
           <Link to="app3" className="box">App3</Link>
@@ -46,8 +48,9 @@ function App() {
           <Link to="app17" className="box">App17</Link>
           <Link to="app18" className="box">App18</Link>
           <Link to="app19" className="box">App19</Link>
-          <Link to="app20" className="box">App20</Link>
+          <Link to="appp20" className="box">App20</Link>
           <Link to="app21" className="box">App21</Link>
+          <Link to="appp22" className="box">App22</Link>
         </div>
         <hr></hr>
         <div>
@@ -72,8 +75,9 @@ function App() {
             <Route path="app17" element={<App17 />} />
             <Route path="app18" element={<App18 />} />
             <Route path="app19" element={<App19 />} />
-            <Route path="app20" element={<App20 />} />
+            <Route path="appp20" element={<Appp20 />} />
             <Route path="app21" element={<App21 />} />
+            <Route path="appp22" element={<Appp22 />} />
           </Routes>
         </div>
       </div>
